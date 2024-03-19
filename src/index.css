@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+    body {
+        /* Apply Montserrat font family */
+        font-family: 'Montserrat', sans-serif;
+        @apply bg-gray-900; /* Set the background color as per your preference */
+    }
+    
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
+
+@layer utilities {
+    .content {
+        margin-top: 0px; /* Adjust the margin-top based on the height of your Navbar */
+    }
+}
+
+:root {
+    --brand: #007bff; /* Define a custom background color */
+}
+
+/* Use custom color variable */
+.bg-custom-background {
+    background-color: var(--brand);
+}
